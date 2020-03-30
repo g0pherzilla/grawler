@@ -56,7 +56,7 @@ func mustCreateFile(name string) *os.File {
 
 func main() {
 	// Parse flags
-	flagBootstrap := flag.String("bootstrap", "zaledia.com", "the first server to crawl")
+	flagBootstrap := flag.String("bootstrap", "gopher.floodgap.com", "the first server to crawl")
 	flagPort := flag.String("port", "70", "the listening port of the first server to crawl")
 	flagCrawlers := flag.Int("crawlers", runtime.NumCPU(), "the number of crawlers to run concurrently")
 	flagDotfile := flag.String("dotfile", "grawler.dot", "the output file")
